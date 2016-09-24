@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<html lang="en">
+    
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="Yelp For Help is a free application that collects crime reports from a federal database and
+alerts you about the local crimes by superimposing the data on a map.It also lets you share your experience about a locality">
+    <meta name="keyword" content="crime, location,
+    reports, safety, neighborhood, SEO">
+        <title>Yelp For Help : Know Your Neighborhood </title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap3.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/help.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/help.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/help.png">
+        <link rel="apple-touch-icon-precomposed" href="images/help.png">
+        <link rel="shortcut icon" href="images/help.png">
+
+        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="js/liquidFillGauge.js" language="JavaScript"></script>
+
+<script type="text/javascript" src="js/respond.min.js"></script>
+ 
+    </head>
+    
+    <body >
+     <div id="google_translate_element"></div>
+<!--<div id="blur" style="display: block;"></div>
+<div id="dabox" class="open" style="opacity: 1; width: 500px; height: 381px; margin-top: -190.5px; margin-left: -250px;">
+  <div id="new_email_questions" data-width="500" class="daboxable">
+  <!--  <form name="myform">-->
+   <!-- <div align="center">
+      <h1>Location Details</h1>
+       <div id="tri" style="margin-top: -1%;"></div>
+        <div class="content" style="display: block; overflow: auto; height: 226px;">
+         <h2>Please Provide Your Location</h2>
+          <div id="locationField">
+             <a href="#" onClick="hide()"> <img src="images/go.png" onclick="gobutton()" style="height: 30px;margin-top:2%; margin-left:78%"></a>
+         </div>
+
+        <br>
+        <p style="color:#FFF;font-size: 20px;margin-top: 0.5%;">Or</p>
+        <button onClick="hide()" class="da-link button" style="padding: 15px;font-size: 20px;">Take My Current Location</button>
+        </div>
+    </div> 
+   <!-- </form>  -->           
+   <!--</div>
+</div>-->
+<style>
+.gm-style-iw {
+   left: 10px !important;
+background-color: rgb(18, 136, 136);
+box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+border: 1px solid rgba(72, 181, 233, 0.6);
+border-radius: 10px 10px 10px 10px;
+padding-left: 10px;
+}
+html, body, {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+</style>
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <img src="images/Yelp.png" width="220" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                     <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#crimeMap">crime Map</a></li> <!--services-->
+                            <li><a href="#Statistics">Categories</a></li><!--portfolio-->
+                            <li><a href="#contact">Share Your Experience</a></li>
+                            <li><a href="#about">About Us</a></li>
+                                                      
+                        </ul>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Start home section -->
+       <div id="home">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+
+                        <h2 class="fittext2">Yelp For Help</h2>
+                        <h4>Be Safe</h4>
+                        <p>Yelp For Help is a free application that collects crime reports from a federal database and
+alerts you about the local crimes by superimposing the data on a map.It also lets you share your experience about a locality.</p>
+                        <a href="#crimeMap" class="da-link button">Read more</a>
+                        <div class="da-img">
+                          <img src="images/mobile.png" alt="image01" width="320">
+                        </div>
+                    </div>
+                    <!-- End first slide -->
+                    <!-- Start second slide -->
+                    <div class="da-slide">
+                        <h2>How safe is your neighbourhood??</h2>
+                        <h4>Easy to Know</h4>
+                        <p>If you wish to know the recent crime reports of a locality or crime statistics of a specific category all you need to do is provide your location.Yelp For Help determines your location via GPS, or You can just type in any address or location. </p>
+                        <a href="#clients" class="da-link button">Read more</a>
+                        <div class="da-img">
+                           <img src="images/slide1.png" width="320" alt="image02">
+                        </div>
+                    </div>
+                    <!-- End second slide -->
+                    <!-- Start third slide -->
+                    <div class="da-slide">
+                        <h2>Rate a place!!</h2>
+                        <h4>Want to share your scary experience???</h4>
+                        <p>You can rate a place by describing your scariest experience in a location.
+                        Spread a word and caution others!!</p>
+                        <a href="#contact" class="da-link button">Read more</a>
+                        <div class="da-img">
+                       <img src="images/rating.png" width="320" alt="image03">
+                        </div>
+                    </div>
+ <!-- Start fourth slide -->
+                    <!-- <div class="da-slide">
+                        <h2>vdo</h2>
+                        <h4></h4>
+                        <p></p>
+                        <a href="#" class="da-link button">Read more</a>
+                        <div class="da-img">
+                          <!--  <img src="images/Slider03.png" width="320" alt="image03">-->
+                      <!--  </div>
+                    </div>-->
+                    <!-- Start third slide -->
+                    <!-- Start cSlide navigation arrows -->
+                    <div class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </div>
+                    <!-- End cSlide navigation arrows -->
+                </div>
+            </div>
+            <div class="triangle" style="border-top: 40px solid darkcyan;"></div>
+        </div>
+        <!-- End home section -->
+
+        <!-- Newsletter section start -->
+        <!--<div id="crimeMap" style="margin-top: 2.5%;">-->
+        <div id="crimeMap" class="section third-section" >
+            <div class="container newsletter">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div id="crime" class="pull-left">
+                            <h3 >Crime Map</h3>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row-fluid" >
+                    <div class="span9">
+                                  
+                     <input id="autocomplete2" placeholder="Enter your address"  type="text" ></input><a href="#crime" onClick="gobutton1()"> <img src="images/go.png" style="height: 30px;"></a>
+
+                     
+                     <button type="button" name="subscribe" class="button button-sp" onclick="doGeolocation()" >My Location</button>
+                    
+                     <button type="button" name="subscribe" class="button button-sp" onclick="create_graph()" >Statistics</button>               
+					 	                    
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!--  </div>-->
+        <!-- Newsletter section end -->
+         <div id="graph" class="span4 animated bounceIn" style=" display:none;"></div>
+         <div id="gauge" class="span4 animated bounceIn" onclick="hider()" style="position: absolute; visibility:hidden;right: 0;z-index: 1;;"><svg id="fillgauge1"></svg></div>
+        <div id="map" style="height:500px;"></div>
+        <!-- Service section start -->
+        <div class="section primary-section" id="Statistics">
+           <div class="triangle"></div>
+            <div class="container">
+                <div class="title" style="margin-top:-2%">
+                    <h1 >Please select a category</h1>
+                    <p>Know crime statistics in your locality and stay safe</p>                   
+                </div>
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                              <a href="#crime"><img class="img-circle" onclick="plot_Assault()" src="images/assault.png" alt="service 1"></a>
+                            </div>
+                            <h3>Assault</h3>
+                            <!--<p>We Create Modern And Clean Theme For Your Business Company.</p>-->
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                               <a href="#crime"><img class="img-circle" onclick="plot_Drunkeness()" src="images/drinking.png" alt="service 2" /></a>
+                            </div>
+                            <h3>Drunkenness</h3>
+                           
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                 <a href="#crime"><img class="img-circle" onclick="plot_Kidnap()" src="images/kidnap2.png" alt="service 3"></a>
+                            </div>
+                            <h3>Kidnap</h3>
+                        
+                        </div>
+                    </div>
+               <!-- </div>-->
+           <!--     <div class="row-fluid">-->
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                 <a href="#crime"><img class="img-circle" onclick="plot_Robbery()" src="images/robber.png" alt="service 1"></a>
+                            </div>
+                            <h3>Robbery</h3>
+                            <!--<p>We Create Modern And Clean Theme For Your Business Company.</p>-->
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                 <a href="#crime"><img class="img-circle" onclick="plot_vehicle_theft()" src="images/vt.png" alt="service 2" /></a>
+                            </div>
+                            <h3>Vehicle Theft</h3>
+                           
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                 <a href="#crime"><img class="img-circle" onclick ="plot_Drug()" src="images/drugs.png" alt="service 3"></a>
+                            </div>
+                            <h3>Drug Addicts</h3>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service section end -->
+         <div class="section secondary-section">
+            <div class="triangle"></div>
+            <div class="container centered">
+                <p class="large-text">Share your experience on Social Media.</p>
+                
+                   <div class="contact">
+                    
+                    <div class="row-fluid centered">
+                        <ul class="social">
+                            <li>
+                               
+                                <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;
+                            p[url]=unicorns.azurewebsites.net/&amp;
+                           "><span class="icon-facebook-circled"></span>
+                           </li>
+                            <li>
+                              
+                                <a target="_blank" href="http://twitter.com/share?text=say something &url=http://unicorns.azurewebsites.net/">
+                                    <span class="icon-twitter-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                 <a target="_blank" href="https://plus.google.com/share?url=http://unicorns.azurewebsites.net/">
+                                    <span class="icon-gplus-circled"></span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            </div>
+        </div>
+
+         <!-- Client section start -->
+         <input type='hidden' id='current_page' />  
+<input type='hidden' id='show_per_page' />  
+
+        
+            <div id="clients" class="section primary-section">
+                <div class="triangle"></div>
+                <div class="container" >
+                    <div class="title">
+                        <h1>What do our Yelpers say?</h1>
+                        <p>Yelpers are those users who helped us by reporting crimes and rated locations. Here is what a few of our Yelpers say about your location:</p>
+                    </div>
+                    <div class="row" id="Yelpers">
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p id="client1_data">"I've worked too hard and too long to let anything stand in the way of my goals. I will not let my teammates down and I will not let myself down."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                 <img src="images/safe.png" class="centered" alt="client 3">
+                                    <strong>Yelper 
+                                        
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p id="client2_data">"In motivating people, you've got to engage their minds and their hearts. I motivate people, I hope, by example - and perhaps by excitement, by having productive ideas to make others feel involved."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                   <img src="images/safe.png" class="centered" alt="client 3">
+                                    <strong>Yelper
+                                        
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p id="client3_data">"Determine never to be idle. No person will have occasion to complain of the want of time who never loses any. It is wonderful how much may be done if we are always doing."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/safe.png" class="centered" alt="client 3">
+                                     <strong>Yelper
+                                        
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                                      
+                     
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p id="client4_data">""</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                 <img src="images/safe.png" class="centered" alt="client 3">
+                                    <strong>Yelper 
+                                        
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p id="client5_data">""</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                   <img src="images/safe.png" class="centered" alt="client 3">
+                                    <strong>Yelper
+                                        
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p id="client6_data">""</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                     <strong>Yelper
+                                    <!-- <img src="images/safe.png" class="centered" alt="client 3">  -->
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id='page_navigation'></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script>
+
+$(document).ready(function(){  
+  
+    //how much items per page to show  
+    var show_per_page = 3;  
+    //getting the amount of elements inside content div  
+    var number_of_items = $('#Yelpers').children().size();  
+    //calculate the number of pages we are going to have  
+    var number_of_pages = Math.ceil(number_of_items/show_per_page);  
+  
+    //set the value of our hidden input fields  
+    $('#current_page').val(0);  
+    $('#show_per_page').val(show_per_page);  
+  
+    //now when we got all we need for the navigation let's make it '  
+  
+    /* 
+    what are we going to have in the navigation? 
+        - link to previous page 
+        - links to specific pages 
+        - link to next page 
+    */  
+    var navigation_html = '<a id="previous_link" href="javascript:previous();" style="color: #149461;font-weight: bold;padding: 3px;margin-top: -30px;margin-left: 45%;" >Prev</a>';  
+    var current_link = 0;  
+    while(number_of_pages > current_link){  
+        navigation_html += '<a style="color: #149461;font-weight: bold;padding: 3px;margin-top: -30px;" id="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';  
+        current_link++;  
+    }  
+    navigation_html += '<a style="color: #149461;font-weight: bold;padding: 3px;margin-top: -30px;" id="next_link" href="javascript:next();">Next</a>';  
+  
+    $('#page_navigation').html(navigation_html);  
+  
+    //add active_page class to the first page link  
+    $('#page_navigation #page_link:first').addClass('active_page');  
+  
+    //hide all the elements inside content div  
+    $('#Yelpers').children().css('display', 'none');  
+  
+    //and show the first n (show_per_page) elements  
+    $('#Yelpers').children().slice(0, show_per_page).css('display', 'block');  
+  
+});  
+  
+function previous(){  
+  
+    new_page = parseInt($('#current_page').val()) - 1;  
+    //if there is an item before the current active link run the function  
+    if($('.active_page').prev('#page_link').length==true){  
+        go_to_page(new_page);  
+    }  
+  
+}  
+  
+function next(){  
+    new_page = parseInt($('#current_page').val()) + 1;  
+    //if there is an item after the current active link run the function  
+    if($('.active_page').next('#page_link').length==true){  
+        go_to_page(new_page);  
+    }  
+  
+}  
+function go_to_page(page_num){  
+    //get the number of items shown per page  
+    var show_per_page = parseInt($('#show_per_page').val());  
+  
+    //get the element number where to start the slice from  
+    var start_from = page_num * show_per_page;  
+  
+    //get the element number where to end the slice  
+    var end_on = start_from + show_per_page;  
+  
+    //hide all children elements of content div, get specific items and show them  
+    $('#Yelpers').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');  
+  
+    /*get the page link that has longdesc attribute of the current page and add active_page class to it 
+    and remove that class from previously active page link*/  
+    $('.page_link[longdesc=' + page_num +']').addClass('active_page').siblings('.active_page').removeClass('active_page');  
+  
+    //update the current page input field  
+    $('#current_page').val(page_num);  
+}  
+</script>
+        <!-- Share your experience -->
+
+         <div class="section secondary-section" id="contact">
+            <div class="triangle"></div>
+            <div class="section secondary-section">
+                <div class="container">
+                    <div class="title">
+                        <h1>Share your experience here...</h1>
+                    </div>
+                </div>
+          <!--  <div style="height: 300px;width: 90%;margin-left: 65%;position: absolute;margin-top: 4%;">-->
+          <div class="span7">
+            <div id="map-canvas" style="transform: translateZ(0px); background-color: rgb(229, 227, 223);"></div> 
+
+  <div class="span7" id="panel" >
+    <input id="origin" class="span6" type="text" size="23" value="" style="margin-top: 1%;" >
+    <a href="#contact" onClick="centermap()"> <img src="images/go.png" style="height: 30px;"></a>
+
+    </div>  
+</div>
+                    <div class="container">
+                    <div class="span5 contact-form centered" >
+                                <h3>Say a word..Save a life!</h3>
+                                    <!--<form id="contact-form">-->
+                                           <table>
+        <tbody style="text-align:right;">
+        <tr>
+    <td>Email:</td>   
+    <td><input class="span4" type="email" id="name" name="name" placeholder="* Your email address..."required="required" /></td> 
+    </tr>
+    <tr>
+    <td>Crime:</td>   
+    <td><select  id="selectCrime" name="selectCrime"  >
+                                           <option value="">Select a crime</option>
+                                           <option value="ASSAULT">ASSAULT</option>
+                                           <option value="DRUNKENNESS">DRUNKENNESS</option>
+                                           <option value="KIDNAP">KIDNAP</option>
+                                           <option value="ROBBERY">ROBBERY</option>
+                                           <option value="VEHICLE THEFT">VEHICLE THEFT</option>
+                                           <option value="DRUG/NARCOTIC">DRUG/NARCOTIC</option>
+                                           </select></td> 
+    </tr>    
+    <tr>
+    <td>Date:</td>
+    <td><input class="span4" type="date" id="datepicker" ></td>
+     <script>
+                                            if (datefield.type!="date"){ 
+                                                jQuery(function($){ 
+                                                    $('#datepicker').datepicker();
+                                                })
+                                            }
+                                            </script>
+    </tr>
+    <tr>
+    <td>Time:</td>
+    <td><input class="span4" type="time" id="myTime"></td>
+    </tr>   
+    <tr>
+    <td>Comments:</td>
+    <td><textarea class="span4" name="comment" id="comment" placeholder="* Comments..."></textarea></td>
+  </tr>
+  <tr>
+    <td>Rating:</td>
+    <td><span class="rating">    
+    <input type="radio" id="star5" style="visibility:hidden;" name="rating" class="rating-input" value="5" /><label for="star5" class="rating-star" title="Safe Place"></label>
+    <input type="radio" id="star4" name="rating" style="visibility:hidden;" class="rating-input" value="4" /><label for="star4" class="rating-star" title="Pretty good"></label>
+    <input type="radio" id="star3" name="rating" style="visibility:hidden;" class="rating-input" value="3" /><label for="star3" class="rating-star" title="Moderate"></label>
+    <input type="radio" id="star2" name="rating" style="visibility:hidden;" class="rating-input" value="2" /><label for="star2" class="rating-star" title="unsafe"></label>
+    <input type="radio" id="star1" name="rating" style="visibility:hidden;" class="rating-input" value="1" /><label for="star1" class="rating-star" title="very unsafe"></label>
+</span></td>
+    </tr>
+  <br/>
+  <tr>
+    <td></td>
+    <td ><button id="save" class="message-btn"  onclick="save_experience()">Save</button></td>
+  </tr>
+     </tbody>
+       </table>                                 
+                              <!--  </form>-->
+                            </div>
+                            
+                    </div>
+                               
+            </div>
+        </div>
+        <!-- About us section start -->
+        <div class="section primary-section" id="about">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class="title">
+                    <h1>Who Are We?</h1>
+                    <p style="text-align:left;">Yelp For Help is a free application that collects crime reports from a federal database and alerts you about the local crimes by superimposing the data on a map.It also lets you share your experience about a locality.</p>
+                </div>
+                <div class="row-fluid team">
+                    <div class="span3" id="first-person">
+                        <div class="thumbnail ">
+                            <img src="images/sindhu.jpg" alt="team 1">
+                            <h3>Sindhura Vallabhaneni</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/sindhura.vallabhaneni?fref=ts">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/sindhurav">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Web Developer</h2>
+                                <p>Full Stack Web Developer majored in Cloud Computing and Virtualization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3" id="second-person">
+                        <div class="thumbnail">
+                            <img src="images/rakesh.jpg" alt="team 1">
+                            <h3>Rakesh Balusa</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/rakesh.balusa">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/rakeshbalusa">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Backend Developer</h2>
+                                <p>Newbie Backend Developer and also has experience in Machine Learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3" id="third-person">
+                        <div class="thumbnail">
+                            <img src="images/pp.jpg" alt="team 1">
+                            <h3>Sankirthi Achutuni</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/Sankirthi">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/sankirthiachutuni">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Web Designer</h2>
+                                <p>Freelance Web Designer and worked as a Programmar Analyst in CTS for 2 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                          <div class="span3" id="fourth-person">
+                        <div class="thumbnail">
+                            <img src="images/bhagi.jpg" alt="team 1">
+                            <h3>Bhargav Vanam</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/MokshaBhargavVanam">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/mbvanam">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Database Analyst</h2>
+                                <p>Database Analyst and software developer who worked in TCS for 3 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text centered">
+                    <h3>About Us</h3>
+                    <p>We are a bunch of San Jose State University students pursuing their Masters in Software Engineering with a zeal to develop interesting innovative and useful applications. Yelp For Help started out as a class project for one of our courses in October 2015. Yelp For Help version 1.0 covers just the city of San Francisco. We are planning to take this project forward to cover the entire USA one day. </p>
+                </div>
+            
+            </div>
+        </div>
+        <!-- About us section end -->
+      
+        <!-- Client section start -->
+       
+      <!-- Contact section start -->
+        <div id="contact" class="contact">
+            
+        </div>
+        <!-- Contact section edn -->
+        <!-- Footer section start -->
+       
+        <div class="footer">
+           
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+       <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMap"></script> commmented-->
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+       
+		<script language="JavaScript">
+  var gauge1 = loadLiquidFillGauge("fillgauge1", 0);
+    var config1 = liquidFillGaugeDefaultSettings();
+    config1.circleColor = "#FF7777";
+    config1.textColor = "#FF4444";
+    config1.waveTextColor = "#FFAAAA";
+    config1.waveColor = "#FFDDDD";
+    config1.circleThickness = 0.2;
+    config1.textVertPosition = 0.2;
+    config1.waveAnimateTime = 1000;
+  
+  
+</script>
+   <script>
+   
+ var fin_array;
+   var map;
+   var marker;
+   var markers=[];
+var markersArray = [];
+var getLat,getLng;
+var user_lat,user_long;
+var fin_user_lat,fin_user_lng;
+
+function give_rating(rating,lati,lngi,email)
+{
+
+		var ret;
+        $.ajax({
+            url: "insert_rating.php",
+            data: {rating:rating,lati:lati,lngi:lngi,email:email},
+			async:false,
+            type: "GET",
+
+            success: function (d) {
+					ret=d;
+             
+            },
+
+            error: function (xhr, status, error) {
+                if (xhr.status > 0) callback("error");
+            }
+        });
+		return ret;
+}
+function give_experience(date,time,lati,lngi,email,category,description)
+{
+
+		var ret;
+        $.ajax({
+            url: "insert_query.php",
+            data: {lati:lati,lngi:lngi,email:email,date:date,time:time,category:category,description:description},
+			async:false,
+            type: "GET",
+
+            success: function (d) {
+					ret=d;
+             
+            },
+
+            error: function (xhr, status, error) {
+                if (xhr.status > 0) callback("error");
+            }
+        });
+		return ret;
+}
+function selected_radio()
+{
+radio_group=document.getElementsByName("rating");
+		for (var i = 0; i < radio_group.length; i++) {
+        var button = radio_group[i];
+        if (button.checked) {
+            return button.value;
+        }
+		
+		}
+		return "not selected";
+}
+function save_experience()
+	{
+		var date='';
+		var time='';
+		var description='';
+		var latit='';
+		var lngi='';
+		var category='';
+		var email='';
+		description=document.getElementById("comment").value;
+		email=document.getElementById("name").value;
+		latit=fin_user_lat;
+		lngi=fin_user_lng;
+		time=document.getElementById("myTime").value;
+		date=document.getElementById("datepicker").value;
+		var sel=document.getElementById("selectCrime");
+		category=sel.options[sel.selectedIndex].text;
+		if(category=='Select a crime')
+		category='';
+		if (latit=='' || lngi=='' || latit===undefined || lngi===undefined)
+		{
+		if(email=='')
+		{
+		alert('please enter a valid email and select a location');
+		}
+		else
+		alert("please select a valid location");
+		}
+		
+		var button_value=selected_radio();
+		if (button_value=="not selected")
+		{
+		
+		}
+		else
+		{
+		if (latit=='' || lngi=='' || latit===undefined || lngi===undefined || email=='')
+		{
+		
+		alert("please select a valid location");
+		}
+		else{
+		var rat_output=give_rating(parseFloat(button_value),parseFloat(latit),parseFloat(lngi),email);
+		if (rat_output=="1")
+		{
+		alert("rating inserted");
+		}
+		else
+		alert("rating database error : "+rat_output);
+		}
+		}
+		
+		if(time!='' || category!='' || description!='')
+		{
+		if(time!='' && category!='' && description!='')
+		{
+		
+		
+		var quer_output=give_experience(date,time,latit,lngi,email,category,description);
+		if (quer_output=="1")
+		{
+		alert("experience saved");
+		}
+		else
+		alert("experience database error : "+quer_output);
+		}
+		else
+		{
+		alert("please enter all the fields to report an incident");
+		}
+		}
+		
+		
+		
+	}
+function goButtonCrimes(user_lat,user_long)
+{
+deleteSpecialMarkers();
+
+if (markersArray.length !=0)
+{
+deleteMarkers();
+}
+var temp_cord = {lat: user_lat, lng: user_long};
+markers[1] = new google.maps.Marker({
+			position: temp_cord,
+			map: map
+			
+		  }); 
+  
+  map.setCenter(new google.maps.LatLng(user_lat, user_long));
+  call_db(user_lat,user_long);
+  
+  plot_crimes();
+
+
+}
+ function positionSuccess(position) {
+    // Centre the map on the new location
+    var coords = position.coords || position.coordinate || position;
+    var latLng = new google.maps.LatLng(coords.latitude, coords.longitude);
+    
+
+		user_lat=coords.latitude;
+		user_long=coords.longitude;
+		goButtonCrimes(user_lat,user_long);
+		
+  }
+function doGeolocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(positionSuccess, positionError);
+    } else {
+      positionError(-1);
+    }
+  }
+
+  function positionError(err) {
+    var msg;
+    switch(err.code) {
+      case err.UNKNOWN_ERROR:
+        msg = "Unable to find your location";
+        break;
+      case err.PERMISSION_DENINED:
+        msg = "Permission denied in finding your location";
+        break;
+      case err.POSITION_UNAVAILABLE:
+        msg = "Your location is currently unknown";
+        break;
+      case err.BREAK:
+        msg = "Attempt to find location took too long";
+        break;
+      default:
+        msg = "Location detection not supported in browser";
+    }
+    document.getElementById('info').innerHTML = msg;
+  }
+function insert_experience(date1,time1,description1,latit1,lngi1,category1,email1)
+{
+
+        
+		//document.getElementById('rake').innerHTML=val1;
+		var ret;
+        $.ajax({
+            url: "insert_query.php",
+            data: {date: date1,email:email1,description:description1,category:category1,latit:latit1,lgni:lngi1,time:time1},
+			async:false,
+            type: "GET",
+
+            success: function (d) {
+					ret=d;
+             
+            },
+
+            error: function (xhr, status, error) {
+                if (xhr.status > 0) callback("error");
+            }
+        });
+		return ret;
+}
+
+// This example displays an address form, using the autocomplete feature
+// of the Google Places API to help users fill in the information.
+function remove_tags(html)
+		{
+		   var tmp = document.createElement("DIV");
+		   tmp.innerHTML = html;
+		   return tmp.textContent || tmp.innerText || "";
+		}
+function call_db(getLat,getLng)
+	{
+	
+		output=get_query_output(getLat,getLng);
+		var rem_val=remove_tags(output);
+		var arr_val=rem_val.split('&&split_string&&');
+		var temp='';
+		var count=0;
+		fin_array=[[]];
+		for(var i=0;i<arr_val.length;i++)
+		{
+			if (arr_val[i]!='')
+			{
+			fin_array[count]=[arr_val[i],arr_val[i+1],arr_val[i+2],arr_val[i+3],arr_val[i+4],arr_val[i+5],arr_val[i+6]];
+			i=i+6;
+			
+			}
+			count++;
+		}
+		
+	}
+function deleteSpecialMarkers()
+{
+
+for (var i=0;i<markers.length;i++)
+		{
+			markers[i].setMap(null);
+		}
+}
+function deleteMarkers()
+	{
+		for (var i=0;i<markersArray.length;i++)
+		{
+			markersArray[i].setMap(null);
+		}
+		
+	}
+
+function set_graph()
+{
+var kidnap_count=0,robbery_count=0,vehicle_count=0,drunk_count=0,drug_count=0,assault_count=0;
+var count_array={"robbery":0,"veh_theft":0,"drunk":0,"assault":0,"kidnap":0,"drug":0};
+for (var i=0;i<fin_array.length;i++)
+		{
+			if (fin_array[i][3]=='DRUG/NARCOTIC')
+			{
+			drug_count=drug_count+1;
+			}
+						if (fin_array[i][3]=='KIDNAPPING')
+			{
+			kidnap_count=kidnap_count+1;
+			}
+						if (fin_array[i][3]=='VEHICLE THEFT')
+			{
+			vehicle_count=vehicle_count+1;
+			}
+						if (fin_array[i][3]=='DRUNKENNESS')
+			{
+			drunk_count=drunk_count+1;
+			}
+						if (fin_array[i][3]=='ROBBERY')
+			{
+			robbery_count=robbery_count+1;
+			}
+						if (fin_array[i][3]=='ASSAULT')
+			{
+			assault_count=assault_count+1;
+			}
+			}
+			
+count_array["robbery"]=robbery_count;
+count_array["veh_theft"]=vehicle_count;
+count_array["drunk"]=drunk_count;
+count_array["drug"]=drug_count;
+count_array["kidnap"]=kidnap_count;
+count_array["assault"]=assault_count;
+return count_array;
+}
+function plot_crimes()
+	{
+		for (var i=0;i<fin_array.length;i++)
+		{				
+			if (fin_array[i][3]=='DRUG/NARCOTIC')
+			{
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/drug.png'});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+			var crime_rat=fin_array[i][6];
+
+            htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+			}
+			if (fin_array[i][3]=='KIDNAPPING')
+			{
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/kidnap.png'});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+			var crime_rat=fin_array[i][6];
+
+            htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+			}
+			if (fin_array[i][3]=='VEHICLE THEFT')
+			{
+						var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/vehtheft.png'});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+			var crime_rat=fin_array[i][6];
+
+			htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+			}
+						if (fin_array[i][3]=='DRUNKENNESS')
+			{
+						var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/drunk.png'});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+			var crime_rat=fin_array[i][6];
+
+            htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+			}
+						if (fin_array[i][3]=='ROBBERY')
+			{
+						var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/robbery.png'});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+			var crime_rat=fin_array[i][6];
+
+            htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+			}
+						if (fin_array[i][3]=='ASSAULT')
+			{
+						var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/assault.png'});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+			var crime_rat=fin_array[i][6];
+
+            htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+			}
+			
+		}
+	}
+function get_query_output(lat,lng)
+	{  
+        var val1=lat;
+		//document.getElementById('rake').innerHTML=val1;
+		var val2=lng;
+		var ret;
+        $.ajax({
+            url: "test2.php",
+            data: {lati: val1, lngi:val2},
+			async:false,
+            type: "GET",
+
+            success: function (d) {
+					ret=d;
+             
+            },
+
+            error: function (xhr, status, error) {
+                if (xhr.status > 0) callback("error");
+            }
+        });
+		return ret;
+
+  
+
+	}
+function get_rating_query(lat,lng)
+	{  
+        var val1=lat;
+		//document.getElementById('rake').innerHTML=val1;
+		var val2=lng;
+		var ret;
+        $.ajax({
+            url: "final_rating.php",
+            data: {lati: val1, lngi:val2},
+			async:false,
+            type: "GET",
+
+            success: function (d) {
+					ret=d;
+             
+            },
+
+            error: function (xhr, status, error) {
+                if (xhr.status > 0) callback("error");
+            }
+        });
+		return ret;
+	}
+function get_rating(lat,lng)
+{
+lat=parseFloat(lat);
+lng=parseFloat(lng);
+var output=get_rating_query(lat,lng);
+console.log("rating : ");
+console.log(output);
+return output;
+
+}
+	function gobutton1()
+{
+deleteSpecialMarkers();
+
+if (markersArray.length !=0)
+{
+deleteMarkers();
+}
+var address=document.getElementById("autocomplete2").value;
+	
+    geocoder = new google.maps.Geocoder();
+	
+    geocoder.geocode({
+        'address': address
+    }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+		
+             markers[1] = new google.maps.Marker({
+			position: results[0].geometry.location,
+			map: map
+			
+		  });		  
+		  getLat = results[0].geometry.location.lat();
+		  getLng = results[0].geometry.location.lng();
+		  map.setCenter(new google.maps.LatLng(getLat, getLng));
+		  var rat=get_rating(getLat,getLng);
+		  call_db(getLat,getLng);
+		  var infowindow = new google.maps.InfoWindow();
+		  var htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Rating : "+rat+"</p>";
+		  addInfoWindow(markers[1],htmlMarkupForInfoWindow);
+          
+          hide(rat/5*100);
+		  plot_crimes();
+        }
+		
+		
+    });
+	
+
+}
+	
+function plot_Drug()
+	{
+		deleteMarkers();
+		for (var i=0;i<fin_array.length;i++)
+		{
+			if (fin_array[i][3]=='DRUG/NARCOTIC')
+			{
+			var infowindow = new google.maps.InfoWindow();
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/drug.png', animation: google.maps.Animation.DROP});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+            var crime_rat=fin_array[i][6];
+			htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+		}
+		}
+	}
+
+function plot_Kidnap()
+	{
+		deleteMarkers();
+		for (var i=0;i<fin_array.length;i++)
+		{
+			if (fin_array[i][3]=='KIDNAPPING')
+			{
+			var infowindow = new google.maps.InfoWindow();
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map, icon:'markers/kidnap.png', animation: google.maps.Animation.DROP});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+            var crime_rat=fin_array[i][6];
+			htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+		}
+		}
+	}
+	
+	function plot_vehicle_theft()
+	{
+		deleteMarkers();
+		for (var i=0;i<fin_array.length;i++)
+		{
+			if (fin_array[i][3]=='VEHICLE THEFT')
+			{
+			var infowindow = new google.maps.InfoWindow();
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map, icon:'markers/vehtheft.png', animation: google.maps.Animation.DROP});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+            var crime_rat=fin_array[i][6];
+			htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+		}
+		}
+	}
+function plot_Robbery()
+	{
+		deleteMarkers();
+		for (var i=0;i<fin_array.length;i++)
+		{
+			if (fin_array[i][3]=='ROBBERY')
+			{
+			var infowindow = new google.maps.InfoWindow();
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/robbery.png', animation: google.maps.Animation.DROP});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+            var crime_rat=fin_array[i][6];
+			htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+		}
+		}
+	}
+
+function plot_Drunkeness()
+	{
+		deleteMarkers();
+		for (var i=0;i<fin_array.length;i++)
+		{
+			if (fin_array[i][3]=='DRUNKENNESS')
+			{
+			var infowindow = new google.maps.InfoWindow();
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/drunk.png', animation: google.maps.Animation.DROP});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+            var crime_rat=fin_array[i][6];
+			htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+		}
+		}
+	}
+	function addInfoWindow(marker, content) {
+    var infoWindow = new google.maps.InfoWindow({
+        content: content
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+        infoWindow.open(map, marker);
+     
+        hider();
+        
+    });
+}
+function get_client_query()
+{
+
+        var val1='10/30/2015';
+		//document.getElementById('rake').innerHTML=val1;
+		var ret;
+        $.ajax({
+            url: "client_data.php",
+            data: {date: val1},
+			async:false,
+            type: "GET",
+
+            success: function (d) {
+					ret=d;
+             
+            },
+
+            error: function (xhr, status, error) {
+                if (xhr.status > 0) callback("error");
+            }
+        });
+		return ret;
+}
+function set_client_data()
+{
+ 
+	output=get_client_query();
+		var rem_val=remove_tags(output);
+		var arr_val=rem_val.split('&&split_string&&');
+		var temp='';
+		var count=0;
+		var	client_array=[[]];
+		for(var i=0;i<arr_val.length;i++)
+		{
+			if (arr_val[i]!='')
+			{
+			client_array[count]=[arr_val[i],arr_val[i+1],arr_val[i+2],arr_val[i+3],arr_val[i+4],arr_val[i+5]];
+			i=i+5;
+			
+			}
+			count++;
+		}
+		var client_description=[];
+		for (var i=0;i<client_array.length;i++)
+		{
+		client_description[i]=client_array[i][2];
+		}
+		document.getElementById("client1_data").innerHTML=client_description[0];
+		document.getElementById("client2_data").innerHTML=client_description[1];
+		document.getElementById("client3_data").innerHTML=client_description[2];
+        document.getElementById("client4_data").innerHTML=client_description[3];
+        document.getElementById("client5_data").innerHTML=client_description[4];
+        document.getElementById("client6_data").innerHTML=client_description[5];
+
+}
+
+function plot_Assault()
+	{
+		deleteMarkers();
+		for (var i=0;i<fin_array.length;i++)
+		{
+			if (fin_array[i][3]=='ASSAULT')
+			{
+			var infowindow = new google.maps.InfoWindow();
+      
+			var myLatLng = new google.maps.LatLng(fin_array[i][0], fin_array[i][1]); 
+			var description=fin_array[i][2];
+			markersArray[i] = new google.maps.Marker({ position: myLatLng, map: map,icon:'markers/assault.png', animation: google.maps.Animation.DROP});
+			marker=markersArray[i];
+			var crime_date=fin_array[i][4];
+			var crime_time=fin_array[i][5];
+            var crime_rat=fin_array[i][6];
+
+			htmlMarkupForInfoWindow="<p style='color: white; padding: 0px;font-weight: bold;padding-top: 10px;font-size: 14px;text-align: center;'>"+"Incident : "+description+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Date : "+crime_date+"</p><p style='color: white; padding: 0;font-weight: bold;font-size: 14px;text-align: center;'>"+"Time : "+crime_time+"</p>";
+			
+			addInfoWindow(marker,htmlMarkupForInfoWindow);
+
+            }
+		}
+	}
+// This example displays an address form, using the autocomplete feature
+// of the Google Places API to help users fill in the information.
+var geocoder1, map1,originauto;
+var markersOrigin=[];
+function initMap() {
+
+         myLatlng = new google.maps.LatLng(37.75, -122.4);
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat:37.75,lng:-122.4},
+    zoom: 17
+  });
+
+var placeSearch, autocomplete, autocomplete2;  
+  
+  autocomplete2 = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete2')),
+      {types: []});
+
+  
+  autocomplete2.bindTo('bounds', map);
+
+   markers[0] = new google.maps.Marker({
+    position: myLatlng,
+    map: map
+  });
+
+<!--commmented-->
+var myLatlng1 = new google.maps.LatLng(37.765,-122.4);
+        var myOptions = {
+            zoom:15,
+            center: myLatlng1,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map1 = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+				set_client_data();
+		originauto = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */(document.getElementById('origin')),
+      {types: []});
+
+  originauto.bindTo('bounds', map1);
+  
+  
+}
+  
+
+
+
+<!--commmented-->
+
+
+
+// [END region_geolocation]
+
+    </script>
+    <!--commmented-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjfRfL2VxjRhIAa5Q75f9Y3t_xBEU0h-k&signed_in=true&libraries=places&callback=initMap"async defer></script>
+ 
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script>
+        function hide(val)
+{
+    var val1=val;
+    gauge1.update(val1);
+    if(document.getElementById('gauge').style.visibility=="hidden")
+    {
+document.getElementById('gauge').style.visibility="visible";
+
+}
+else
+document.getElementById('gauge').style.visibility="hidden";
+}
+
+  function hider()
+{
+   
+    if(document.getElementById('gauge').style.visibility=="hidden")
+    {
+document.getElementById('gauge').style.visibility="visible";
+
+}
+else
+document.getElementById('gauge').style.visibility="hidden";
+}
+
+function create_graph()
+{
+    if(document.getElementById('graph').style.display=="none")
+    {
+document.getElementById('graph').style.display="block";
+Create();
+}
+else
+document.getElementById('graph').style.display="none";
+}
+function Create()
+{
+    var counts = set_graph();
+
+
+
+    $('#graph').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Crime Report'
+        },
+       
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'No. Of Crimes'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b> of total<br/>'
+        },
+
+        series: [{
+            name: 'Crimes',
+            colorByPoint: true,
+            data: [{
+                name: 'ASSAULT',
+                y: parseFloat(counts["assault"]),
+                drilldown: 'ASSAULT'
+            }, {
+                name: 'DRUNKENNESS',
+                y: parseFloat(counts["drunk"]),
+                drilldown: 'DRUNKENNESS'
+            }, {
+                name: 'KIDNAP',
+                y: parseFloat(counts["kidnap"]),
+                drilldown: 'KIDNAP'
+            }, {
+                name: 'DRUG/NARCOTIC',
+                y: parseFloat(counts["drug"]),
+                drilldown: 'DRUG/NARCOTIC'
+            }, {
+                name: 'ROBBERY',
+                y: parseFloat(counts["robbery"]),
+                drilldown: 'ROBBERY'
+            }, {
+                name: 'VEHICLE THEFT',
+                y: parseFloat(counts["veh_theft"]),
+                drilldown: 'VEHICLE THEFT'
+            }]
+        }],
+        
+    });
+
+
+}
+function deleteOriginMarkers()
+{
+		for (var i=0;i<markersOrigin.length;i++)
+		{
+			markersOrigin[i].setMap(null);
+		}
+
+}
+
+
+function centermap()
+        {
+		if (markersOrigin.length !=0)
+		{
+		deleteOriginMarkers();
+		}
+        var address=document.getElementById("origin").value;
+        codeAddress(address);
+		
+        }
+        function codeAddress(address) {
+    geocoder1 = new google.maps.Geocoder();
+    geocoder1.geocode({
+        'address': address
+    }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+           //commmented
+           
+                markersOrigin[0] = new google.maps.Marker({
+            position: results[0].geometry.location,
+            map: map1,
+            draggable: true
+          });
+			map1.setCenter(new google.maps.LatLng(markersOrigin[0].getPosition().lat(),markersOrigin[0].getPosition().lng()));
+          google.maps.event.addListener(markersOrigin[0], 'dragend', function() {
+            
+           fin_user_lat=markersOrigin[0].getPosition().lat();
+			fin_user_lng= markersOrigin[0].getPosition().lng();
+          }); 
+			
+        }
+    });
+}
+    		$(document).ready(function(){
+
+var input = /** @type {!HTMLInputElement} */(
+
+      document.getElementById('origin'));
+
+      var autocomplete3 = new google.maps.places.Autocomplete(input);
+
+ autocomplete3.addListener('place_changed', function() {
+
+    infowindow.close();
+
+    marker.setVisible(false);
+
+    var place = autocomplete3.getPlace();
+
+    if (!place.geometry) {
+
+      window.alert("Autocomplete's returned place contains no geometry");
+
+      return;
+
+    }
+    if (place.geometry.viewport) {
+
+      map.fitBounds(place.geometry.viewport);
+
+    } else {
+
+      map.setCenter(place.geometry.location);
+
+      map.setZoom(17);  
+
+    }
+
+  });               
+
+           });
+		   
+    window.onload = function () { initialize() };
+    </script>
+
+		
+  </body>
+</html>
